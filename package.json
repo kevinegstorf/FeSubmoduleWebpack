@@ -9,6 +9,8 @@
   "author": "Kevin Egstorf",
   "license": "MIT",
   "devDependencies": {
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
     "webpack": "^1.13.2"
   },
   "dependencies": {

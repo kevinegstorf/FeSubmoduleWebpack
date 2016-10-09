@@ -1,16 +1,19 @@
 module.exports = {
-    entry: "./entry.js",
+    entry: "./src/entry.js",
     output: {
         path: __dirname,
         filename: "bundle.js"
     },
     module: {
-        loaders: [
-            { test: /\.css$/, loader: "style!css" }
-        ]
-    },
+      loaders: [
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
+    ]
+  },
     devServer: {
           inline:true,
           port: 4000
-  },
+  }
 };
